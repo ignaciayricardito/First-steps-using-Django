@@ -20,10 +20,12 @@ from django.conf.urls import include
 from petclub.views import(
     HelloWorld,
     PersonView,
+    PetView,
     )
 
 urlpatterns = [
-    path('pets', PersonView.as_view(), name="person"),
+    path('persons', PersonView.as_view(), name="person"),
+    path('pets', PetView.as_view(), name='pet'),
     path('hi', HelloWorld.as_view(), name="helloworld"),
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
