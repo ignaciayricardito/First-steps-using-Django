@@ -15,7 +15,7 @@ class Person(models.Model):
 class Pet(models.Model):
     id = models.AutoField(primary_key=True)
     species = models.CharField(max_length=50)
-    name = models.CharField(max_lenght=50)
+    name = models.CharField(max_length=50)
     age = models.IntegerField()
     color = models.CharField(max_length=50)
     
